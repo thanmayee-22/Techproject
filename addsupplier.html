@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* CSS code */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    header img {
+      text-align: left;
+      height: 60px; /* Adjust the height as needed */
+    }
+  
+    .home-link {
+      color: #fff;
+      text-decoration: none;
+    }
+  
+    .container {
+      margin: 20px auto;
+      max-width: 400px;
+      padding: 20px;
+      border: 1px solid #333;
+    }
+  
+    .container h2 {
+      margin-bottom: 20px;
+    }
+  
+    .form-group {
+      margin-bottom: 20px;
+    }
+  
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+  
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="tel"],
+    .form-group input[type="number"],
+    .form-group input[type="date"],
+    .form-group select {
+      width: 100%;
+      padding: 5px;
+      font-size: 16px;
+    }
+  
+    .form-group input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  
+    .form-group input[type="submit"]:hover {
+      background-color: #555;
+    }
+  
+    .product-group {
+      display: none;
+    }
+  </style>
+  <script>
+    // JavaScript code
+    document.addEventListener("DOMContentLoaded", function() {
+      var categorySelect = document.getElementById("category");
+      var productGroup = document.getElementById("product-group");
+
+      categorySelect.addEventListener("change", function() {
+        if (categorySelect.value === "") {
+          productGroup.style.display = "none";
+        } else {
+          productGroup.style.display = "block";
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <img src="logo1.jpg" alt="Logo">
+    <a class="home-link" href="dashboard.html">Home</a>
+  </header>
+  
+  <div class="container">
+    <h2>Add New Supplier</h2>
+    <form action="dashboard.html" method="post">
+    <form>
+      <div class="form-group">
+        <label for="retailer-name">Supplier Name</label>
+        <input type="text" id="retailer-name" name="retailer-name" required>
+      </div>
+      <div class="form-group">
+        <label for="retailer-email">Supplier Email</label>
+        <input type="email" id="retailer-email" name="retailer-email" required>
+      </div>
+      <div class="form-group">
+        <label for="retailer-phone">Phone Number</label>
+        <input type="tel" id="retailer-phone" name="retailer-phone" required>
+      </div>
+      <div class="form-group">
+        <label for="retailer-address">Address</label>
+        <input type="text" id="retailer-address" name="retailer-address" required>
+      </div>
+      <div class="form-group">
+        <label for="category">Category</label>
+        <select id="category" name="category" required>
+          <option value="">Select category</option>
+          <option value="Category 1">Category 1</option>
+          <option value="Category 2">Category 2</option>
+          <option value="Category 3">Category 3</option>
+        </select>
+      </div>
+      <div id="product-group" class="form-group product-group">
+        <label for="product">Product</label>
+        <select id="product" name="product" required>
+          <option value="">Select product</option>
+          <option value="Product 1">Product 1</option>
+          <option value="Product 2">Product 2</option>
+          <option value="Product 3">Product 3</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="total-quantity">Total Quantity</label>
+        <input type="number" id="total-quantity" name="total-quantity" required>
+      </div>
+      <div class="form-group">
+        <label for="price">Price</label>
+        <input type="number" id="price" name="price" step="0.01" required>
+      </div>
+      <div class="form-group">
+        <label for="delivery-date">Delivered Date</label>
+        <input type="date" id="delivery-date" name="delivery-date" required>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Add Supplier">
+      </div>
+    </form>
+  </div>
+</body>
+</html>

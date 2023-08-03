@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* CSS code */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header img {
+      text-align: left;
+      height: 60px; /* Adjust the height as needed */
+    }
+    h2 {
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .home-link {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    table {
+      margin-top: 20px;
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    .table-actions {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .table-actions a {
+      color: #333;
+      text-decoration: none;
+      padding: 5px 10px;
+    }
+
+    .table-actions a:hover {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <!-- HTML code -->
+  <header>
+    <img src="logo1.jpg" alt="Logo">
+    <a class="home-link" href="dashboard.html">Home</a>
+  </header>
+  
+  <h2>Retailer Table</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Retailer ID</th>
+        <th>Retailer Name</th>
+        <th>Product Name</th>
+        <th>Product Quantity</th>
+        <th>Total Fault</th>
+        <th>Delivery Date</th>
+        <th>Total Price</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>John Doe</td>
+        <td>Product A</td>
+        <td>10</td>
+        <td>2</td>
+        <td>2023-07-15</td>
+        <td>$100.00</td>
+        <td class="table-actions">
+          <a href="#">View</a>
+          <a href="addretailer.html">Sell Again</a>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Jane Smith</td>
+        <td>Product B</td>
+        <td>5</td>
+        <td>1</td>
+        <td>2023-07-16</td>
+        <td>$50.00</td>
+        <td class="table-actions">
+          <a href="#">View</a>
+          <a href="addretailer.html">Sell Again</a>
+        </td>
+      </tr>
+      <!-- Add more rows as needed -->
+    </tbody>
+  </table>
+</body>
+</html>

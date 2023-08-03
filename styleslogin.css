@@ -1,0 +1,102 @@
+body {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column; /* Added for the header */
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("back.jpg"); /* Replace with the path to your image */
+    background-size: cover;
+    background-position: center;
+    
+}
+header {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    background-color: rgb(65, 42, 65);
+}
+
+header img {
+    height: 60px; /* Adjust the height as needed */
+}
+
+.container {
+    max-width: 500px;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.box {
+    background-color:cornsilk;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    width: 400px; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+    margin: 0 auto; /* Add this line to center horizontally */
+    box-sizing: border-box;
+}
+
+
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+input[type="text"],
+input[type="password"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+.forgot-password {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.forgot-password a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.back {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.back a {
+    color:red;
+    text-decoration: none;
+}
+
+.back a:hover {
+    text-decoration: underline;
+}
+
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 40px; /* Adjusted from 100px */
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
